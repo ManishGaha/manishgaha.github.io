@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Nepal Nalanda School</title>
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="./index.html" class="logo">Nalanda</a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="course.html">Course</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+
+        </nav>
+        <h1>Our Notice & Schooler Programs.</h1>
+    </section>
+
+    <!--blog page content -->
+
+    <section class="blog-content">
+        <div class="row">
+            <div class="blog-left">
+                <img src="./img/sport.jpg" alt="">
+                <h2>Our Certificate & Schooler Programs for 2022</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat eaque illum qui accusantium ad quae adipisci explicabo corrupti cumque quia! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores iste possimus molestiae. Illum fugit excepturi adipisci unde dolore sint facilis.</p>
+                <br>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat eaque illum qui accusantium ad quae adipisci explicabo corrupti cumque quia!</p>
+                <br>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat eaque illum qui accusantium ad quae adipisci explicabo corrupti cumque quia Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse, incidunt eaque! Expedita architecto, unde inventore sed quos ad minima non maxime rerum accusantium et nemo facere nihil, libero doloremque saepe?
+                </p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, omnis minus ipsum at veniam quis officiis. Obcaecati magni culpa id voluptatum consequuntur eveniet ullam architecto? Accusantium enim saepe doloremque minus?</p>
+                <div class="comment-box">
+                    <h3>LEAVE A COMMENT</h3>
+                    <form class="comment-form">
+                        <input type="text" placeholder="enter name">
+                        <input type="email" placeholder="enter email">
+                        <textarea rows="5" placeholder="your comment"></textarea>
+                        <button type="submit" class="hero-btn red-btn">Post Comment</button>
+                    </form>
+                </div>
+            </div>
+           <!-- <div class="blog-right">
+                <h3>Post Categories</h3>
+                <div>
+                    <span>Business Analytices</span>
+                    <span>21</span>
+                </div>
+                <div>
+                    <span>Data Science</span>
+                    <span>28</span>
+                </div>
+                <div>
+                    <span>Machine Learning</span>
+                    <span>15</span>
+                </div>
+                <div>
+                    <span>Computer Science</span>
+                    <span>21</span>
+                </div>
+                <div>
+                    <span>AutoCAD</span>
+                    <span>21</span>
+                </div>
+                <div>
+                    <span>Journalism</span>
+                    <span>21</span>
+                </div>
+                <div>
+                    <span>Commerce</span>
+                    <span>21</span>
+                </div>
+            </div>
+            -->
+        </div>
+    </section>
+
+
+        
+
+
+    <!-- Footer -->
+
+    <section class="footer">
+        <h1>About Us</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br> Quis veniam culpa voluptas tenetur iure laudantium.</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-youtube"></i>
+        </div>
+        <p>Made With <i class="fa fa-heart-o"></i> by Manish Gaha</p>
+    </section>
+
+    <!-- JS FOR RESPONSIVE MENU -->
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
+ 
