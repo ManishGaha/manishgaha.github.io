@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>20s Cosmetic | Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Charm:700" rel="stylesheet">
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:500,600,700,900&display=swap" rel="stylesheet">
+    <!-- ionicon  -->
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <!-- gsap  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js "></script>
+</head>
+
+<body>
+    <div class="container">
+
+        <nav class="navbar">
+            <div class="logo-icon">
+                <ion-icon name="o" style="font-size: 20px;"></ion-icon>
+            </div>
+            <div class="logo">20s Cosmetic</div>
+            <div class="search">
+                <ion-icon name="ios-search"></ion-icon>
+            </div>
+        </nav>
+
+        <div class="img">
+            <img src="image.jpeg" alt="">
+        </div>
+
+        <div class="title">
+            <h1>
+                <span class="text-one">Define<label> Beauty.</label></span>
+            </h1>
+            <h2><span>Y</span>ou</h2>
+            <h3>
+                <span class="text-two">  Defines<label></label></span>
+            </h3>
+            <p>
+                <span class="text-three">
+                    Affordable. Gorgeous and Beauty which you deserves &copy <span class="web"></span> We Web Crafters.
+                </span>
+            </p>
+        </div>
+
+        <div class="line"></div>
+        <div class="tag">
+            <span>Be New Flower Today</span>
+        </div>
+
+        <button>Visit Shop Now</button>
+    
+
+        <div class="bottom left-right icn">
+            <ul>
+                <li>
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </li>
+                <li>
+                    <ion-icon name="logo-pinterest"></ion-icon>
+                </li>
+                <li>
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </li>
+            </ul>
+        </div>
+
+        <div class="media">
+            <ul>
+                <li>Contact</li>
+                <li>Store</li>
+                <li>About Us</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        TweenMax.from(".logo", 1.6, {
+            delay: .2,
+            opacity: 0,
+            y: 20,
+            ease: Expo.easeInOut
+        })
+
+        TweenMax.from(".search", 1.6, {
+            delay: .4,
+            opacity: 0,
+            y: 20,
+            ease: Expo.easeInOut
+        })
+
+        TweenMax.from(".logo-icon", 1.6, {
+            delay: 0,
+            opacity: 0,
+            y: 20,
+            ease: Expo.easeInOut
+        })
+
+        TweenMax.staggerFrom(".text-one", 2, {
+            delay: 2.6,
+            opacity: 0,
+            y: 40,
+            ease: Expo.easeInOut
+        }, 0.2)
+
+        TweenMax.staggerFrom(".text-two", 1.5, {
+            delay: 3.4,
+            opacity: 0,
+            y: -40,
+            ease: Expo.easeInOut
+        }, 0.2)
+        TweenMax.staggerFrom(".text-two label", 1, {
+            delay: 4,
+            opacity: 0,
+
+            ease: Expo.easeInOut
+        }, 0.2)
+
+        TweenMax.staggerFrom("h2", 2, {
+            delay: 4,
+            opacity: 0,
+            x: -60,
+            ease: Expo.easeInOut
+        }, 0.2)
+
+        TweenMax.staggerFrom(".text-three", 2, {
+            delay: 4.7,
+            opacity: 0,
+            y: 40,
+            ease: Expo.easeInOut
+        }, 0.2)
+
+        TweenMax.from("button", 2, {
+            delay: 5.5,
+            opacity: 0,
+            y: -30,
+            ease: Expo.easeInOut
+        })
+
+        TweenMax.from(".line", 2, {
+            delay: 5,
+            opacity: 0,
+            x: -100,
+            ease: Expo.easeInOut
+        })
+
+        TweenMax.from(".tag", 2, {
+            delay: 5.3,
+            opacity: 0,
+            y: -30,
+            ease: Expo.easeInOut
+        })
+
+        TweenMax.staggerFrom(".media ul li", 2, {
+            delay: 6,
+            opacity: 0,
+            y: -40,
+            ease: Expo.easeInOut
+        }, 0.2)
+
+        TweenMax.staggerFrom(".left-right ul li", 2, {
+            delay: 6.4,
+            opacity: 0,
+            y: -40,
+            ease: Expo.easeInOut
+        }, 0.2)
+    </script>
+</body>
+
+</html>
